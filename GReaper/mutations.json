@@ -1,0 +1,24 @@
+[
+   {
+        "type" : "mutation",
+        "id" : "MARTIAL_ARTS_greaper",
+        "name" : "大鎌使い",
+        "points" : 3,
+        "description" : "死神のように鎌を振るう方法を知っています。グリムリーパーを修得した状態で始まります。",
+        "starting_trait" : true,
+        "initial_ma_styles" : [ "style_greaper" ],
+        "valid" : false
+   },
+   {
+        "type" : "mutation",
+        "id" : "PROF_MARTIAL_ARTS_greaper",
+        "name" : "大鎌使い",
+        "points" : 0,
+        "description" : "死神のように鎌を振るう方法を知っています。",
+        "starting_trait" : false,
+        "initial_ma_styles" : [ "style_greaper" ],
+        "valid" : false,
+	"purifiable": false,
+        "profession": true
+   }
+]

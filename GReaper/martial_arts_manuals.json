@@ -1,0 +1,13 @@
+[
+  {
+    "id": "manual_greaper",
+    "type": "BOOK",
+    "copy-from": "book_martial",
+    "category": "books",
+    "looks_like": "manual_medievalpole",
+    "name": "本(武術/死神の練習曲)",
+    "description": "見習い死神が迷える魂を導くため奮闘する物語です。妙に詳細に描かれた戦闘シーンから鎌の扱い方を読み取ることが出来ます。",
+    "price_postapoc": 3000,
+    "martial_art": "style_greaper"
+  }
+]

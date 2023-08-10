@@ -1,0 +1,32 @@
+[
+  {
+    "type" : "item_group",
+    "id" : "novels",
+    "copy-from": "novels",
+    "extend": {
+      "items": [
+        [ "manual_greaper", 3 ]
+      ]
+    }
+  },
+  {
+    "type" : "item_group",
+    "id" : "textbooks",
+    "copy-from": "textbooks",
+    "extend": {
+      "items": [
+        ["gscythe_artifactbook", 1]
+      ]
+    }
+  },
+  {
+    "type" : "item_group",
+    "id" : "hospital_bed",
+    "copy-from": "hospital_bed",
+    "extend": {
+      "items": [
+        ["gscythe_artifactbook", 5 ]
+      ]
+    }
+  }
+]

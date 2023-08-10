@@ -1,0 +1,62 @@
+[
+    {
+        "type" : "technique",
+        "id" : "tec_greaper_crit",
+        "name" : "首狩り",
+        "skill_requirements": [ { "name": "melee", "level": 3 } ],
+        "melee_allowed": true,
+        "crit_tec" : true,
+        "flat_bonuses" : [{ "stat": "arpen", "type": "cut", "scale": 10}],
+        "mult_bonuses" : [{ "stat": "damage", "type": "cut", "scale": 1.5}],
+        "messages" : [
+            "首を狙った一撃は%sに",
+            "<npcname>の首狙いの攻撃は%sに"
+        ],
+        "attack_vectors": [ "WEAPON" ]
+    },
+    {
+        "type" : "technique",
+        "id" : "tec_greaper_feint",
+        "name" : "空薙ぎ",
+        "skill_requirements": [ { "name": "melee", "level": 2 } ],
+        "melee_allowed": true,
+        "defensive" : true,
+        "miss_recovery" : true,
+        "mult_bonuses" : [{ "stat": "movecost", "scale": 0.9 }],
+        "messages" : [
+            "%sにフェイントを仕掛けた。",
+            "<npcname>は%sにフェイントを仕掛けた。"
+        ],
+        "attack_vectors": [ "WEAPON" ]
+    },
+    {
+        "type" : "technique",
+        "id" : "tec_greaper_fastatk",
+        "name" : "影踏み",
+        "skill_requirements": [ { "name": "melee", "level": 5 } ],
+        "melee_allowed": true,
+        "req_buffs" : ["greaper_dodgebuff"],
+        "mult_bonuses" : [{ "stat": "movecost", "scale": 0.7 }],
+        "stun_dur" : 1,
+        "messages" : [
+            "素早く%sを斬りつけ機先を制した。",
+            "<npcname>は素早く%sを斬りつけ機先を制した。"
+        ],
+        "attack_vectors": [ "WEAPON" ]
+    },
+    {
+        "type" : "technique",
+        "id" : "tec_greaper_crit2",
+        "name" : "魂裂き",
+        "skill_requirements": [ { "name": "melee", "level": 8 } ],
+        "melee_allowed": true,
+        "crit_tec" : true,
+        "flat_bonuses" : [{ "stat": "arpen", "type": "cut", "scale": 20}],
+        "mult_bonuses" : [{ "stat": "damage", "type": "cut", "scale": 3.0}],
+        "messages" : [
+            "魂を引き裂く一撃は%sに",
+            "<npcname>の魂を引き裂く一撃は%sに"
+        ],
+        "attack_vectors": [ "WEAPON" ]
+    }
+]

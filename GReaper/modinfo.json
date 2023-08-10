@@ -1,0 +1,10 @@
+[
+    {
+        "type": "MOD_INFO",
+        "mod-type": "SUPPLEMENTAL",
+        "ident": "greaper",
+        "name": "追加-グリムリーパー",
+        "maintainers": [ "CDDAJP_Discode_TEAM" ],
+        "description": "死神のように鎌を振るう戦闘術と戦闘用大鎌の強化先を追加します。"
+    }
+]

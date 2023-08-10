@@ -1,0 +1,82 @@
+[
+    {
+        "type" : "martial_art",
+        "id" : "style_greaper",
+        "name" : "グリムリーパー",
+        "description": "死神のアイコンとして名高い大鎌を用いる戦闘術です。およそ武器に向かない形状の道具をわざわざ手にするのは相応の理由があるからでしょう。",
+        "learn_difficulty": 6,
+        "initiate": [ "次の目標を探すことにしました" ],
+    	"arm_block" : 99,
+        "leg_block" : 99,
+        "primary_skill": "cutting",
+        "strictly_melee": true,
+        "static_buffs" : [
+            {
+                "id" : "greaper_staticbuff1",
+                "name" : "大鎌使い",
+                "description" : "鎌装備時の命中率が増加します。",
+                "melee_allowed": true,
+                "max_stacks" : 1,
+                "flat_bonuses": [ { "stat": "hit", "scale": 1.0 } ]
+            },
+            {
+                "id" : "greaper_staticbuff2",
+                "name" : "不死狩り",
+                "description" : "鎌装備時の攻撃コストを軽減します。",
+                "melee_allowed": true,
+                "min_melee" : 3,
+                "max_stacks" : 1,
+                "flat_bonuses" : [{ "stat": "movecost", "scale": -10 }]
+            },
+            {
+                "id" : "greaper_staticbuff3",
+                "name" : "死神",
+                "description" : "鎌装備時の攻撃コストをさらに軽減します。",
+                "melee_allowed": true,
+                "min_melee" : 9,
+                "max_stacks" : 1,
+                "flat_bonuses" : [{ "stat": "movecost", "scale": -10 }]
+            }
+        ],
+        "ondodge_buffs" : [
+            {
+                "id" : "greaper_dodgebuff",
+                "name" : "止めの一撃",
+                "description" : "手緩い攻撃を避け隙を見つけました。急所への斬撃を繰り出しましょう。",
+                "melee_allowed": true,
+                "buff_duration" : 2,
+                "max_stacks" : 2,
+                "mult_bonuses" : [{ "stat": "damage", "type": "cut", "scale": 1.2 }]
+            }
+        ],
+        "onblock_buffs" : [
+            {
+                "id" : "greaper_blockbuff",
+                "name" : "死の舞踏",
+                "description" : "攻撃を捌くことに成功しました。勢いを利用することで追加の回避機会を得ます。",
+                "melee_allowed": true,
+                "buff_duration" : 2,
+                "max_stacks" : 2,
+                "flat_bonuses" : [{ "stat": "dodge", "scale": 1.0 }],
+                "bonus_dodges" : 1
+            }
+        ],
+        "techniques" : [
+        "tec_greaper_crit",
+        "tec_greaper_feint",
+        "tec_greaper_fastatk",
+        "tec_greaper_crit2"
+        ],
+        "weapons" : [
+             "scythe",
+             "scythe_war",
+             "gscythe_war_ii",
+             "gscythe_war_ex",
+             "gscythe_diamond",
+             "gscythe_fire_off",
+             "gscythe_fire_on",
+             "gscythe_relic",
+             "gscythe_millionaire"
+        ]
+    }
+]

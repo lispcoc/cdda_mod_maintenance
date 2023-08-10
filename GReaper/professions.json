@@ -1,0 +1,44 @@
+[
+    {
+        "type": "profession",
+        "ident": "greaper_job1",
+        "name": "死神見習い",
+        "description": "災厄の時、仕事だったのか趣味だったのかコスプレだったのか…とにかく大鎌を手にしていました。そこかしこに溢れた迷える不死者共を狩り取り、本物の死神になれるかは自分次第です。",
+        "points": 2,
+        "skills": [
+            {
+                "level": 1,
+                "name": "melee"
+            },
+	    {
+                "level": 1,
+                "name": "cutting"
+            },
+            {
+                "level": 1,
+                "name": "dodge"
+            }
+        ],
+	"traits": ["PROF_MARTIAL_ARTS_greaper"],
+        "items": {
+            "both": [
+		"tshirt",
+		"hoodie",
+		"shorts_cargo",
+		"sneakers",
+		"gloves_fingerless",
+		"scythe_war",
+		"apple",
+		"apple",
+		"apple"
+            ],
+            "male": [
+                "boxer_shorts"
+            ],
+            "female": [
+                "sports_bra",
+                "boy_shorts"
+            ]
+        }
+    }
+]
