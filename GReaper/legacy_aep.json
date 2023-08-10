@@ -1,0 +1,53 @@
+[
+  {
+    "type": "enchantment",
+    "id": "AEP_INT_DOWN",
+    "has": "WIELD",
+    "values": [ { "value": "INTELLIGENCE", "add": -3 } ]
+  },
+  {
+    "type": "enchantment",
+    "id": "AEP_SAP_LIFE",
+    "has": "WIELD",
+    "ench_effects": [ { "effect": "effect_AEP_SAP_LIFE", "intensity": 1 } ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_AEP_SAP_LIFE"
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_AEP_SAP_LIFE",
+    "eoc_type": "EVENT",
+    "required_event": "character_melee_attacks_character",
+    "condition": { "and": [ { "u_has_effect": "effect_AEP_SAP_LIFE" }, { "not": { "npc_has_species": "ZOMBIE" } } ] },
+    "effect": [
+      { "math": [ "u_hp('torso')", "+=", "rand(3)" ] },
+      { "math": [ "u_hp('head')", "+=", "rand(3)" ] },
+      { "math": [ "u_hp('arm_l')", "+=", "rand(3)" ] },
+      { "math": [ "u_hp('arm_r')", "+=", "rand(3)" ] },
+      { "math": [ "u_hp('leg_l')", "+=", "rand(3)" ] },
+      { "math": [ "u_hp('leg_r')", "+=", "rand(3)" ] }
+    ]
+  },
+  {
+    "type": "enchantment",
+    "id": "AEP_PSYSHIELD",
+    "has": "WIELD",
+    "ench_effects": [ { "effect": "effect_AEP_PSYSHIELD", "intensity": 1 } ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_AEP_PSYSHIELD"
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_AEP_PSYSHIELD",
+    "eoc_type": "EVENT",
+    "required_event": "character_gains_effect",
+    "condition": {
+      "and": [ { "u_has_effect": "effect_AEP_PSYSHIELD" }, { "compare_string": [ "fearparalyze", { "context_val": "effect" } ] } ]
+    },
+    "effect": [ { "u_lose_effect": "fearparalyze" } ]
+  }
+]
