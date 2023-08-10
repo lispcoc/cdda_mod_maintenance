@@ -1,23 +1,22 @@
 [
-    {
-        "id": "gscythe_artifactbook",
-        "type": "BOOK",
-        "category": "books",
-        "max_level" : 7,
-        "symbol": "?",
-        "color": "green",
-        "looks_like": "textbook_carpentry",
-        "name": "本(学習/金と紫の大鎌)",
-		"name_plural": "本(学習/金と紫の大鎌)",
-        "description": "二振りの神秘的な大鎌についての物語が記された本です。作成法が丁寧に纏められており、ひょっとすると再現できるかもしれません。",
-        "price": 77000,
-        "material": "paper",
-        "weight": 770,
-        "volume": 7,
-        "fun" : 0,
-        "intelligence" : 7,
-        "time" : 44,
-        "skill" : "fabrication",
-        "required_level" : 6
-   }
+  {
+    "id": "gscythe_artifactbook",
+    "type": "BOOK",
+    "category": "books",
+    "max_level": 7,
+    "symbol": "?",
+    "color": "green",
+    "looks_like": "textbook_carpentry",
+    "name": { "str": "本(学習/金と紫の大鎌)", "str_pl": "本(学習/金と紫の大鎌)" },
+    "description": "二振りの神秘的な大鎌についての物語が記された本です。作成法が丁寧に纏められており、ひょっとすると再現できるかもしれません。",
+    "price": 77000,
+    "material": "paper",
+    "weight": 770,
+    "volume": 7,
+    "fun": 0,
+    "intelligence": 7,
+    "time": 44,
+    "skill": "fabrication",
+    "required_level": 6
+  }
 ]
